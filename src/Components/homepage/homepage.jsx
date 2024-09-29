@@ -8,6 +8,10 @@ function Homepage() {
     setResult(`Come meet me tomorrow`);
   };
 
+  const handleAnswers = (answer) => {
+    
+  };
+
   const moveButton = () => {
     const randomTop = Math.floor(Math.random() * 400) + 'px';
     const randomLeft = Math.floor(Math.random() * 400) + 'px';
@@ -25,7 +29,7 @@ function Homepage() {
         >
           No
         </button>
-        <button onClick={() => handleAnswer('Paris')} style={{ ...buttonStyle, position: 'relative', left: '0px' }}>
+        <button onClick={() => handleAnswers('Paris')} style={{ ...buttonStyle, position: 'relative', left: '0px' }}>
           Yes
         </button>
       </div>
