@@ -24,12 +24,12 @@ function Homepage() {
       <div style={{ position: 'relative', display: 'inline-block' }}>
         <button
           onMouseEnter={moveButton}
-          onClick={() => handleAnswer('Berlin')}
+          onClick={() => handleAnswers('Berlin')}
           style={{ ...buttonStyle, position: 'absolute', top: berlinPosition.top, left: berlinPosition.left }}
         >
           No
         </button>
-        <button onClick={() => handleAnswers('Paris')} style={{ ...buttonStyle, position: 'relative', left: '0px' }}>
+        <button onClick={() => handleAnswer('Paris')} style={{ ...buttonStyle, position: 'relative', left: '0px' }}>
           Yes
         </button>
       </div>
